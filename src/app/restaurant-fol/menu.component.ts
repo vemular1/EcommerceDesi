@@ -53,12 +53,18 @@ export class MenuComponent {
   }
 
   // When add to cart button is clicked
-  addToCart(product) {
+  addToCart(product, quan) {
     
     // this.productService.addToCart(product)
-    console.log(this.quantity)
+    this.quantity = parseInt(quan);
     this.cartStore.addToCart(product, this.quantity || 1);
+    this.empty();
      this.openSnackBar(product.name,this.CartMessage);
+     
+  }
+
+  empty(){
+    this.quantity = 0;
   }
 
  

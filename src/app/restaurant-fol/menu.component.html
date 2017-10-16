@@ -38,10 +38,10 @@
                 <md-card-actions>
                     <div style="display: flex">
                         <span class="padding-right-5">Quantity: </span>
-                        <input type="number" [(ngModel)]="quantity">
+                        <input type="number" #quantity>
                     </div>
                     <h1 class="badge">${{item.price}} </h1>
-                    <button (click)="addToCart(item)" class="btn btn-sm btn-primary" aria-label="Show an example snack-bar">Add to Cart</button>
+                    <button (click)="addToCart(item,quantity.value)" class="btn btn-sm btn-primary" aria-label="Show an example snack-bar">Add to Cart</button>
                     
                 </md-card-actions>
             </md-card>
