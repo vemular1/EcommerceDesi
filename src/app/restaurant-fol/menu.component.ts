@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
 import {MdSnackBar} from '@angular/material';
 
 import { Product } from './../models/Product';
-import { ProductService } from './../services/product.service';
+// import { ProductService } from './../services/product.service';
 import { CartAction } from './../store/actions/cart.actions';
 
 @Component({

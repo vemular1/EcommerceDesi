@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductService } from './services/product.service';
+// import { ProductService } from './services/product.service';
 import { CartAction } from './store/actions/cart.actions';
 // import{MdSidenav} from '@angular/material';
 import { Subscription } from 'rxjs/Subscription';
@@ -18,7 +18,7 @@ export class AppComponent {
   public totalPrice: number;
   public totalQuantity: any;
 
-  constructor(private productService:ProductService, private cartStore: CartAction) {}
+  constructor(private cartStore: CartAction) {}
 
   // ngOnInit() {
   //   this.cartStore.getState().subscribe(res => {

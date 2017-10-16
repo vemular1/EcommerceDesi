@@ -9,9 +9,9 @@ import{LogindashComponent}from './login/logindash.component';
 
 import {RestaurantsSortComponent} from './restaurant-fol/restaurant-sort.component';
 import {MenuComponent} from './restaurant-fol/menu.component';
-import { ProductComponent } from './components/product/product.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { CartComponent } from './components/cart/cart.component';
+// import { ProductComponent } from './components/product/product.component';
+// import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+// import { CartComponent } from './components/cart/cart.component';
 import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.component';
  
 export const routes:Routes = [
@@ -26,10 +26,10 @@ export const routes:Routes = [
       
     },
    
-    {
-        path:'product',
-        component:ProductComponent,
-    }, 
+    // {
+    //     path:'product',
+    //     component:ProductComponent,
+    // }, 
     {
     path: 'restuarant',
     component: RestaurantsdisplayComponent,
@@ -46,15 +46,15 @@ export const routes:Routes = [
 
     ]
   },
-  {
-    path: 'detail/:id',
-    component: ProductDetailComponent
-  },
-     {
-          path:'cart',
-        component:CartComponent, 
+//   {
+//     path: 'detail/:id',
+//     component: ProductDetailComponent
+//   },
+    //  {
+    //       path:'cart',
+    //     component:CartComponent, 
 
-    },
+    // },
     {
           path:'contactus',
         component: ContactusComponent,

@@ -1,9 +1,9 @@
-import {ProductService} from './product.service';
+//import {ProductService} from './product.service';
 import{RestuarantService} from './restuarant.service';
 import{MenuService} from './menu.service';
 
 export const SERVICES =  [
-    ProductService,
+   // ProductService,
     RestuarantService,
     MenuService
 ]
