@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
         <div class="row shrink">
                 <div class="form-group" style="margin-top:70px">
                     <div class="col-lg-6" >
@@ -21,4 +21,28 @@
            
            </div>
     </div>
-</div>
+</div> -->
+<div class="row">
+    <div *ngFor="let item of value ">
+        <div class="col-xs-4 padding-10">
+            <md-card class="card-container-phone">
+                <md-card-header>
+                    <div md-card-avatar class="example-header-image"></div>
+                    <md-card-title>
+                        <span class="badge"></span> <strong>{{item.name}}</strong>    
+                    </md-card-title>
+                </md-card-header>
+
+                <img width="220" height="220" class="image-align-center padding-bottom-10" src={{item.img}}/>
+               
+                <md-card-actions>
+                    <div style="display: flex">
+                        <span class="padding-right-5">Quantity: </span>
+                        <input type="number" [(ngModel)]="quantity">
+                    </div>
+                    <h1 class="badge">${{item.price}} </h1>
+                    <button (click)="addToCart(item)" class="btn btn-sm btn-primary" aria-label="Show an example snack-bar">Add to Cart</button>
+                    
+                </md-card-actions>
+            </md-card>
+        </div>
