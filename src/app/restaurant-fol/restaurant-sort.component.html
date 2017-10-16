@@ -1,0 +1,50 @@
+<div class="container">
+        <div class="row shrink">
+                <div class="form-group" style="margin-top:70px">
+                    <div class="col-lg-6" >
+                        <input type="text" [(ngModel)]="searchText" 
+                                      class="form-control" placeholder="Search By Location" style="height:40px" />
+                   </div>
+               </div>  
+        <!--<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>-->
+
+        <!--<div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>-->
+        <br/>
+        <br/>
+        <br/>
+
+            <div style="margin-top:30px; padding:0%;"  class= "gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-6" *ngFor="let item of records | location: searchText">
+                 <div class="mdl-card__title mdl-card--expand"  [routerLink] = "['/restuarant', item.Name]" >
+                     <img class="img-fluid img-thumbnail " src={{item.img}}> 
+                </div>
+       <ul class="rating" style="padding:inherit;">
+         <li>
+           <a href="#" title="very poor"><span class="visuallyhidden" >ver bad</span></a>
+        </li>
+        <li>
+           <a href="#" title="Poor"><span class="visuallyhidden">Poor</span></a>
+        </li>
+        <li>
+           <a href="#" title="Good"><span class="visuallyhidden">Good</span></a> 
+       </li>
+       <li>
+          <a href="#" title="Very Good"><span class="visuallyhidden">Very Good</span></a>
+       </li>
+       <li>
+         <a href="#" title="Awesome"><span class="visuallyhidden">Awesome</span></a>
+      </li>
+  </ul> 
+
+               <h6> {{item.Name}} </h6>
+           
+           </div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+.port-image
+{
+    width: 100%;
+}
+
+
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+.rating a:before {
+  font-family: "entypo";
+  content: "★";
+}
+
+.rating:hover li a,
+.rating:focus li a,
+.rating.result li a {
+  color: #ff0;
+}
+
+.rating li {
+  display: inline-block;
+}
+
+.rating li:hover ~ li a,
+.rating .active ~ li a {
+  color:black;
+}
+
+.rating li a {
+  display: block;
+  padding: 3px;
+  font-size: 25px;
+  color:azure;
+}
+
+.rating li a:focus {
+  outline: none;
+  color: #ff0;
+}
+
+
+/* Styling */
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  /*//position: absolute;*/
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.rating {
+  margin-bottom:0px;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+img{
+    width:150px;
+    height:150px;
+}
+
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.shrink img {
+transition: 1s ease;
+}
+
+.shrink img:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+
+body{
+    background-color: #93d38d;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        width:70%;
+        
+    }
+}
