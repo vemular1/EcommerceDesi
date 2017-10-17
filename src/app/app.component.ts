@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ProductService } from './services/product.service';
+// import { ProductService } from './services/product.service';
 import { CartAction } from './store/actions/cart.actions';
 // import{MdSidenav} from '@angular/material';
 import { Subscription } from 'rxjs/Subscription';
@@ -22,21 +22,21 @@ password: string;
   public totalPrice: number;
   public totalQuantity: any;
 
-  constructor(private productService:ProductService, private cartStore: CartAction, public authService: AuthService) {}
-    
-  signup() {
-    this.authService.signup(this.email, this.password);
-    this.email = this.password = '';
-  }
+  constructor(private cartStore: CartAction, public authService: AuthService) {}
   
-  login() {
-    this.authService.login(this.email, this.password);
-    this.email = this.password = '';    
-  }
-  
-  logout() {
-    this.authService.logout();
-  }
+signup() {
+  this.authService.signup(this.email, this.password);
+  this.email = this.password = '';
+}
+
+login() {
+  this.authService.login(this.email, this.password);
+  this.email = this.password = '';    
+}
+
+logout() {
+  this.authService.logout();
+}
   // ngOnInit() {
   //   this.cartStore.getState().subscribe(res => {
   //     this.cart = res

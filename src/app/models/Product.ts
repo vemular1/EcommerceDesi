@@ -1,10 +1,10 @@
 export class Product {
-    id:number;
-    name:string;
-    src:string;
-    info:any;
-    price:number;
-    // name: string;
-    // price: number;
-    // img: string;
+    // id:number;
+    // name:string;
+    // src:string;
+    // info:any;
+    // price:number;
+    name: string;
+    price: number;
+    img: string;
 }

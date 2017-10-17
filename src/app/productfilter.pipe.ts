@@ -37,20 +37,20 @@ export class KeysPipe implements PipeTransform {
         if (myCount > 0) {
 
            
-            var b = function(name, count, price,id,src){
+            var b = function(name, count, price,img){
                 this.name = name;
                 this.info = count;
                 this.price = price;
-                this.id = id;
-                this.src = src;
+                
+                this.img = img;
             }
-            var a = new b(original[i],quan,some[i].price,some[i].id,some[i].src);
+            var a = new b(some[i].name,quan,some[i].price,some[i].img);
            
             compressed.push(a);
            
         }
     }
-     console.log(some);
+     console.log("filter"+some);
  console.log(compressed);
     return compressed;
 };

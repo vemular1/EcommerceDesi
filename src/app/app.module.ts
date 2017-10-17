@@ -21,7 +21,7 @@ import { LocationPipe } from './restaurant-fol/category.pipe';
 import { RestaurantsSortComponent } from './restaurant-fol/restaurant-sort.component';
 import {MenuComponent} from './restaurant-fol/menu.component';
 //import{PizzaPartyComponent} from './components/product/product.component'
-import { COMPONENTS } from './components';
+// import { COMPONENTS } from './components';
 import { SERVICES } from './services';
 import { ACTIONS } from './store/actions';
 import { reducers, metaReducers } from './store/reducers';
@@ -62,7 +62,6 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
 @NgModule({
   declarations: [
     AppComponent,
-    COMPONENTS,
     KeysPipe,
     RestaurantsComponent,
     ContactusComponent,
