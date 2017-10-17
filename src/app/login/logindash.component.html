@@ -1,4 +1,78 @@
-<div class = "container">
+<div class="full">
+    <div class="container">
+        <div class="row main">
+            <div class="main-login main-center panel">
+
+
+                <div *ngIf="!(authService.user | async) ">
+                    <div *ngIf="!(authService.user | async) ">
+                        <div class="heading">
+                            <h3><b>Sign In To Your Account! </b></h3>
+
+                        </div><br>
+                        <!-- <div class="col-lg-4" style="margin-left: -25px;" id="large">
+                            <div class="panel-group col-xs-12">
+                                <!-- <div class="panel panel-primary">-->
+                        <!--<div class="panel-heading" style="text-align:center;background-color:ForestGreen ">{{Some}} Panel</div> -->
+
+                        <div class="panel-body col-lg-12">
+
+                            <div class="col-lg-0">
+
+
+
+
+                                <a (click)="UserChangePanel()" class="btn btn-primary btn-block" style="background-color:rgb(18, 47, 64) "> User</a>
+                                <a (click)="DriverChangePanel()" class="btn btn-primary btn-block" style="background-color:rgb(18, 47, 64)">Driver</a>
+                                <a (click)="VendorChangePanel()" class="btn btn-primary btn-block" style="background-color:rgb(18, 47, 64)">Vendor</a>
+
+                            </div>
+                        </div>
+                        <br>
+                        <h3 style="text-align:center;">{{Some}} Login </h3>
+                        <div class="form-group ">
+                            <label for="email " class="cols-sm-2 control-label ">Your Email</label>
+                            <div class="cols-sm-10 ">
+                                <div class="input-group ">
+                                    <span class="input-group-addon "><i class="fa fa-envelope fa " aria-hidden="true "></i></span>
+                                    <input type="email" [(ngModel)]="email " class="form-control " name="email " id="email " placeholder="Enter your Email " />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="password " class="cols-sm-2 control-label ">Password</label>
+                            <div class="cols-sm-10 ">
+                                <div class="input-group ">
+                                    <span class="input-group-addon "><i class="fa fa-lock fa-lg " aria-hidden="true "></i></span>
+                                    <input type="password" [(ngModel)]="password " class="form-control " name="password " id="password " placeholder="Enter your Password " />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group " align="center">
+                            <button (click)="login()" [disabled]="!email || !password" type="button " id="button " class="button button1 btn-lg login-button ">Login</button> <br><br>
+                            <p>Don’t have an account?<span><a type="link" style="color:yellow;"  [routerLink]="['/login','signUp']"><b>Create Your Account</b></a></span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Login Successful-->
+                <h4 *ngIf="authService.user | async ">Welcome back <br> {{ (authService.user | async)?.email }}! <br>
+                </h4>
+                <h4 *ngIf="authService.user | async "> Your <a style="color:yellow;" [routerLink]="['/home/']"> DEALS</a> are waiting for you!</h4>
+                <!-- 
+                <button class="button button2 btn-lg" (click)="logout() " *ngIf="authService.user | async ">
+                    Logout
+                         </button> -->
+                <!--</form> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class = "container">
 
     <div class="well well-lg row">
         
@@ -39,7 +113,7 @@
       
   </div> 
 
-  <!-- messages -->
+  <!-- messages ->
   <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
   <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div> 
 
@@ -64,4 +138,4 @@
             </div>
 
     </div>
-        
+  -->

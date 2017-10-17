@@ -1,6 +1,32 @@
+
 # LargeScaleEcommerceSite
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+
+#INSTALL
+1. Download the source code 
+
+2. Go to folder with package.json file and 
+      `npm install`
+
+3. Install firebase and angularfire2
+      `npm install firebase angularfire2 --save`
+
+4. Install additional Dependences
+      `npm install angular angular-animate angular-aria angular-messages mdi`
+      `npm install promise-polyfill --save-exact` 
+
+5. Run
+      `npm start`
+
+#REFERENCES 
+1. [Firebase Authentication Angularfire2](https://alligator.io/angular/firebase-authentication-angularfire2/)  
+2. [Complete-step-by-step-firebase-authentication](https://www.codementor.io/hellotunmbi/complete-step-by-step-firebase-authentication-in-angular-2-b2zsgcbl9) 
+ 
+#GIT FETCH AND MERGE
+`git fetch origin branchName`
+`git checkout branchName`
+`git merge origin/branchName`
 
 ## Development server
 
