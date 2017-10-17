@@ -1,13 +1,15 @@
+<div class="el">
 <app-root></app-root>
+
 <div class="bgimg-1">
   <div class="caption">
    <form class="navbar-form navbar-center">
    <h1>Delivers food in minutes</h1>
-      <div class="form-group">
+      <!-- <div class="form-group">
           
         <input type="text" class="form-control input-lg" placeholder="Street address, City, Zip">
-      </div>
-      <button type="submit" class="btn btn-success btn-lg">Find Food</button>
+      </div> -->
+      <button type="submit" [routerLink]="['/restuarant']" class="btn btn-success btn-lg">Find Food</button>
     </form>
 	
    <!-- <span class="border">SCROLL DOWN</span>-->
@@ -91,27 +93,45 @@
   </h5>
 </div>
       </div><br><br>
-<div class="col-xs-2" style="text-align:center;" id="radius1" >
- 
- <h4><b>Discount</b></h4>
- <p></p>
- 
+<div class="row1">
+     
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid img-thumbnail" style="width:150px;height:150px" src="http://stcathys.com/blog/wp-content/uploads/2016/09/student-discount.jpg">
+                    <div class="card card-block">
+                        <h5 class="text-bold"><b>Student Discounts</b></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid img-thumbnail" style="width:150px;height:150px" src="http://www.utdallas.edu/news/imgs/photos-2017-07/UTD-monogram-250-2017-07.jpg">
+                    <div class="card card-block">
+                        <h5 class="text-bold"><b>special discounts for UTD students</b></h5>
+                    </div>
+                </div>
+            </div>
 
-</div><br>
-<div class="col-xs-2" style="text-align:center;" id="radius2" >
-  
-  <h4><b> Free Delivery</b></h4>
-  <p> </p>
-  
- 
-  
-</div><br>
-<div class="col-xs-2" style="text-align:center;" id="radius3">
-  
-  <h4><b>UTD Students</b></h4>
-  <p> </p>
-  
- 
+            <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid img-thumbnail" style="width:150px;height:150px; margin-top:-90px;" src="http://www.livingbetterat50.com/wp-content/uploads/2012/03/Sherri_Snelling_image_Food-Delivery-1_credits_Dreamstime.jpg">
+                    <div class="card card-block">
+                        <h5 class="text-bold"><b>free delivery for orders above 100$</b></h5>
+                    </div>
+                </div>
+            </div>
+           
+               <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+                <div class="card">
+                    <img class="card-img-top img-fluid img-thumbnail" style="width:150px;height:150px; margin-top:-90px;" src="http://thenantaisgroup.com/wp-content/uploads/2015/08/CustomerService.png">
+                    <div class="card card-block">
+                        <h5 class="text-bold"><b>Best service guaranteed</b></h5>
+                    </div>
+                </div>
+            </div>
+           
+           
+
 </div>
 
 
@@ -221,17 +241,17 @@
                         
                         	<li class="widget-container widget_nav_menu"><!-- widgets list -->
                     
-                                <h1 class="title-widget">Useful links</h1>
+                                <h1 class="title-widget">Restaurants</h1>
                                 
                                 <ul>
-                                	<li><a  href="#"><i class="fa fa-angle-double-right"></i> About Us</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Success Stories</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> PG Courses</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i> Achiever's Batch</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Regular Batch</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test & Discussion</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Fast Track T & D</a></li>
+                                	<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>GODAVARI</a></li>
+                                    <li><a  routerLink="/restuarant/Dwaraka" ><i class="fa fa-angle-double-right"></i>DWARAKA</a></li>
+                                    <li><a  routerLink="/restuarant/Al-maidah" ><i class="fa fa-angle-double-right"></i> AL-MAIDAH</a></li>
+                                    <li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>LAHORI KABAB</a></li>
+                                    <li><a  routerLink="/restuarant/Hyderabad%20House" ><i class="fa fa-angle-double-right"></i>Hyderabad House</a></li>
+                                    <li><a  routerLink="/restuarant/Wild%20Mirchi" ><i class="fa fa-angle-double-right"></i>Wild Mirchi</a></li>
+                                    <li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Basera Biriyani Grill</a></li>
+                                    <li><a  routerLink="/restuarant/Bheemas" ><i class="fa fa-angle-double-right"></i>BHEEMAS</a></li>
                                 </ul>
                     
 							</li>
@@ -249,17 +269,17 @@
                         
                         	<li class="widget-container widget_nav_menu"><!-- widgets list -->
                     
-                                <h1 class="title-widget">Useful links</h1>
+                                <h1 class="title-widget">Restaurants</h1>
                                 
                                 <ul>
- 									<li><a  href="#"><i class="fa fa-angle-double-right"></i>  Test Series Schedule</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Postal Coaching</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  PG Dr. Bhatia Books</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  UG Courses</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Satellite Education</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  Study Centres</a></li>
-                                    <li><a  href="#"><i class="fa fa-angle-double-right"></i>  State P.G. Mocks</a></li>
-                                    <li><a  href="#" target="_blank"><i class="fa fa-angle-double-right"></i> Results</a></li>
+ 									                  <li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>RuchiPalace</a></li>
+                                    <li><a   routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>chameli</a></li>
+                                    <li><a   routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Manchale</a></li>
+                                    <li><a   routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Ananda Bhavan</a></li>
+                                    <li><a   routerLink="/restuarant/Saaina" ><i class="fa fa-angle-double-right"></i>saaina</a></li>
+                                    <li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>anjappar</a></li>
+                                    <li><a   routerLink="/restuarant/Chennai%20Cafe" ><i class="fa fa-angle-double-right"></i>chennai cafe</a></li>
+                                    <li><a   routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Saregama</a></li>
                                     
                                 </ul>
                     
@@ -278,19 +298,19 @@
                         
                         	<li class="widget-container widget_nav_menu"><!-- widgets list -->
                     
-                                <h1 class="title-widget">Useful links</h1>
+                                <h1 class="title-widget">Restaurants</h1>
                                 
                                 <ul>
 
 
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> Enquiry Form</a></li>
- 				<li><a href="#"><i class="fa fa-angle-double-right"></i> Online Test Series</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i> Grand Tests Series</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i> Subject Wise Test Series</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i> Smart Book</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i> Test Centres</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Admission Form</a></li>
-				<li><a href="#"><i class="fa fa-angle-double-right"></i>  Computer Live Test</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Saravana Bhavan</a></li>
+ 				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Maharaja</a></li>
+				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Bamboo Garden</a></li>
+				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>7 Spice</a></li>
+				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>GRIHA</a></li>
+				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>palio's</a></li>
+        <li><a  routerLink="/restuarant/madurai%20thattu" ><i class="fa fa-angle-double-right"></i>Madurai Thattu</a></li>
+				<li><a  routerLink="/restuarant" ><i class="fa fa-angle-double-right"></i>Bombay Chop Stix</a></li>
 
                                 </ul>
                     
@@ -313,24 +333,9 @@
                                 <h1 class="title-widget">Contact Detail </h1>
                                  <div class="col-sm-6 col-md-4">
               <div id="meta-4" class="widget widgetFooter widget_meta">
-              <h6 class="widgettitle">Subscribe :</h6>
+             
 
-              <div class="form-group">
-                <div class="input-group">
-                  <label class="input-group-addon">E-mail :</label>
-                  <input class="form-control " placeholder="Write your email .." type="text">
-                </div>
-              </div>
-
-              <div class="form-group ">
-                <div class="input-group ">
-                  <label class="input-group-addon">Phone  :</label>
-                  <input class="form-control" placeholder="+96777000000" type="text">
-                   <label class="input-group-btn">
-                    <button class="btn btn-primary" type="button">Subscribe !</button>
-                  </label>
-                </div>
-              </div>
+        
 
 
               </div>
@@ -367,7 +372,7 @@
 
 				<div class="copyright">
 
-					© 2015, Webenlance, All rights reserved
+					© 2017, MaxoTeam, All rights reserved
 
 				</div>
 
@@ -377,7 +382,7 @@
 
 				<div class="design">
 
-					 <a href="#">Franchisee </a> |  <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+					 <a href="#">RebuildDesiDine2Go </a> |  <a target="_blank" href="http://www.webenlance.com">Web Design & Development by MaxoTech</a>
 
 				</div>
 
@@ -387,4 +392,5 @@
 
 	</div>
 
+</div>
 </div>

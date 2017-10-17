@@ -36,7 +36,7 @@ export class RestaurantsSortComponent implements OnInit {
       { Name:"Lahori Kabab",locationName :"Frisco",img:"https://desidine2go.com/wp-content/uploads/2017/04/Lahori1.png"},
       { Name:"Saregama",locationName :"irving,75038",img:"https://www.indianfoodsguide.com/media/com_mtree/images/listings/m/297.jpg" },
       { Name:"saravana Bhavan",locationName :"irving,75063",img:"https://s3-media4.fl.yelpcdn.com/bphoto/oxizLPJNQVZO1ZxonQqG6w/ls.jpg"},
-      { Name:"Sai Gayatri Curry Point",locationName :"frisco 75035 ",img:"https://s3-media3.fl.yelpcdn.com/bphoto/rTHF1FIA7fF7wJf-lnm8pA/ls.jpg"},
+      { Name:"Sai Gayatri",locationName :"frisco 75035 ",img:"https://s3-media3.fl.yelpcdn.com/bphoto/rTHF1FIA7fF7wJf-lnm8pA/ls.jpg"},
       { Name:"Hyderabad House",locationName :"plano 75093 ",img:"https://s3-media4.fl.yelpcdn.com/bphoto/oxizLPJNQVZO1ZxonQqG6w/ls.jpg"},
       { Name:"godavari",locationName :"irving",img:"https://desidine2go.com/wp-content/uploads/2017/03/godavari_logo.png"},
       { Name:"chameli",locationName:"richardson 75081",img:"https://desidine2go.com/wp-content/uploads/2017/09/chameli-e1459919558499-min.jpg"},

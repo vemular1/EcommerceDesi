@@ -22,9 +22,10 @@
            </div>
     </div>
 </div> -->
-<div class="row" style="padding-top:70px;">
+<div class="el">
+<div class="row" style="padding-top:50px;">
     <div *ngFor="let item of value ">
-        <div class="col-xs-4 padding-10">
+        <div class="col-md-2">
             <md-card class="card-container-phone">
                 <md-card-header>
                     <div md-card-avatar class="example-header-image"></div>
@@ -33,7 +34,7 @@
                     </md-card-title>
                 </md-card-header>
 
-                <img width="220" height="220" class="image-align-center padding-bottom-10" src={{item.img}}/>
+                <img width="400" height="220" class="image-align-center padding-bottom-10" src={{item.img}}/>
                
                 <md-card-actions>
                     <div style="display: flex">
@@ -45,4 +46,5 @@
                     
                 </md-card-actions>
             </md-card>
+        </div>
         </div>

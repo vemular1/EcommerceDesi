@@ -28,6 +28,13 @@ import { reducers, metaReducers } from './store/reducers';
 import { AllEffects } from './store/effects';
 import { routing } from './app.routing';
 
+//importing firebase Config
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AuthService } from './auth.service';
+export const firebaseConfig = environment.firebaseConfig;
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 // 
 import {MdButtonModule, 
@@ -51,6 +58,7 @@ import{LogindashComponent}from './login/logindash.component';
 import{LoginComponent} from './login/login.component';
 import {GuestComponent} from './login/guest.component';
 import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +84,7 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
     MatCardModule,
     MatSnackBarModule,
    
+   
     MdButtonModule,
     MatSidenavModule,
     MdButtonModule, 
@@ -87,6 +96,11 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
   MdNativeDateModule,
   MdGridListModule ,
   MatGridListModule,
+
+  //firebase
+  AngularFireModule.initializeApp(firebaseConfig),
+  AngularFireAuthModule,
+
     //To register the reducers at the application level. for registering the reducers to the feature modules which are lazy loaded use for feature module 
     StoreModule.forRoot(reducers, 
       // { metaReducers }
@@ -97,7 +111,7 @@ import {RestaurantsdisplayComponent} from './restaurant-fol/restaurantdisplay.co
     AllEffects,
     
   ],
-  providers: [ SERVICES, ACTIONS ],
+  providers: [ SERVICES, ACTIONS, AuthService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,6 +4,7 @@ import { CartAction } from './store/actions/cart.actions';
 // import{MdSidenav} from '@angular/material';
 import { Subscription } from 'rxjs/Subscription';
 
+import { AuthService } from './auth.service';
 
 @Component({
   selector: 'app-root',
@@ -12,14 +13,30 @@ import { Subscription } from 'rxjs/Subscription';
     providers: []
 })
 export class AppComponent {
+//Firebase Login and Signup
+email: string;
+password: string;
 
   public cart:any = [];
-  
+ 
   public totalPrice: number;
   public totalQuantity: any;
 
-  constructor(private cartStore: CartAction) {}
+  constructor(private cartStore: CartAction, public authService: AuthService) {}
+  
+signup() {
+  this.authService.signup(this.email, this.password);
+  this.email = this.password = '';
+}
 
+login() {
+  this.authService.login(this.email, this.password);
+  this.email = this.password = '';    
+}
+
+logout() {
+  this.authService.logout();
+}
   // ngOnInit() {
   //   this.cartStore.getState().subscribe(res => {
   //     this.cart = res
