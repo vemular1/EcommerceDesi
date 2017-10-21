@@ -4,11 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "sudo ng serve",
+    "build": "sudo ng build",
+    "test": "sudo ng test",
+    "lint": "sudo ng lint",
+    "e2e": "sudo ng e2e"
   },
   "private": true,
   "dependencies": {
