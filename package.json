@@ -6,9 +6,9 @@
     "ng": "ng",
     "start": "sudo ng serve",
     "build": "sudo ng build",
-    //"test": "sudo ng test",
-    //"lint": "sudo ng lint",
-    //"e2e": "sudo ng e2e"
+    "test": "sudo ng test",
+    "lint": "sudo ng lint",
+    "e2e": "sudo ng e2e"
   },
   "private": true,
   "dependencies": {
